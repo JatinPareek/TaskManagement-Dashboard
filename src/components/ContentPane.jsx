@@ -42,7 +42,7 @@ const ContentPane = ({ className = "" }) => {
           <div className="self-stretch flex flex-row items-start justify-end pr-8 shrink-0 gap-[20px]">
             <div className="h-12 w-[314px] flex flex-row items-start justify-start gap-[24px]">
               <Button
-                className="self-stretch flex-1"
+                className="self-stretch flex-1 primary"
                 startIcon={<img width="20px" height="20px" src="/add.svg" />}
                 disableElevation
                 variant="contained"

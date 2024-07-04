@@ -11,18 +11,18 @@ const Container = ({ className = "" }) => {
           <div className="flex-1 flex flex-col items-start justify-start gap-[18px]">
             <div className="flex flex-row items-start justify-start gap-[8px]">
               <img
-                className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px]"
+                className="h-[18px] w-[18px] relative overflow-hidden shrink-0 min-h-[18px] primary"
                 loading="lazy"
                 alt=""
                 src="/icon-8.svg"
               />
               <div className="flex flex-col items-start justify-start pt-px px-0 pb-0">
-                <div className="relative leading-[100%] font-semibold inline-block min-w-[86px]">
+                <div className="relative leading-[100%] font-semibold inline-block min-w-[86px] primary">
                   Board view
                 </div>
               </div>
             </div>
-            <div className="self-stretch h-[3px] relative rounded-t-sm rounded-b-none bg-royalblue" />
+            <div className="primary self-stretch h-[3px] relative rounded-t-sm rounded-b-none bg-royalblue" />
           </div>
           <button className="cursor-pointer [border:none] pt-px px-0 pb-0 bg-[transparent] flex flex-col items-start justify-start">
             <button className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-start justify-start gap-[8px]">
@@ -59,7 +59,7 @@ const Container = ({ className = "" }) => {
           }}
         >{`Filter & Sort`}</Button>
         <Button
-          className="h-[38px] flex-1"
+          className="h-[38px] flex-1 primary"
           disableElevation
           variant="contained"
           sx={{

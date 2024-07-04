@@ -294,37 +294,63 @@ const Projects = ({ className = "" }) => {
           </div>
         </div>
       </div>
-      <div className="self-stretch h-[42px] rounded-3xl bg-gray-200 flex flex-row items-start justify-start p-1 box-border z-[1] text-sm text-darkgray font-exo-2">
+      <div className="self-stretch h-[42px] rounded-3xl bg-gray-200 flex flex-row items-center justify-between p-1 box-border z-[1] text-sm text-darkgray font-exo-2">
         <div className="h-[42px] w-[262px] relative rounded-3xl bg-gray-200 hidden" />
+
+        {/* Light Mode Button */}
         <Button
-          className="self-stretch flex-1 shadow-[0px_8px_6px_rgba(28,_29,_34,_0.06)] z-[1]"
-          startIcon={<img width="20px" height="20px" src="/icon-6.svg" />}
+          className="flex-1 mx-1 shadow-[0px_8px_6px_rgba(28,_29,_34,_0.06)] z-[1]"
+          startIcon={
+            <img
+              width="20px"
+              height="20px"
+              src="/icon-6.svg"
+              alt="Light mode icon"
+            />
+          }
           variant="contained"
           sx={{
             textTransform: "none",
             color: "#1c1d22",
-            fontSize: "14",
+            fontSize: "14px",
             background: "#fff",
             borderRadius: "18px",
-            "&:hover": { background: "#fff" },
+            "&:hover": { background: "#f0f0f0" },
+          }}
+          onClick={() => {
+            document.body.classList.remove("dark");
           }}
         >
           Light
         </Button>
-        <div className="flex flex-row items-start justify-start py-[7px] px-[35px] relative gap-[6px] z-[1]">
-          <div className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-lg" />
-          <img
-            className="h-5 w-5 relative overflow-hidden shrink-0 min-h-[20px] z-[1]"
-            loading="lazy"
-            alt=""
-            src="/icon-7.svg"
-          />
-          <div className="flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-            <div className="relative leading-[100%] font-semibold inline-block min-w-[31px] z-[1]">
-              Dark
-            </div>
-          </div>
-        </div>
+
+        {/* Dark Mode Button */}
+        <Button
+          className="flex-1 mx-1 shadow-[0px_8px_6px_rgba(28,_29,_34,_0.06)] z-[1]"
+          startIcon={
+            <img
+              width="20px"
+              height="20px"
+              src="/icon-7.svg"
+              alt="Dark mode icon"
+              style={{ filter: "invert(100%)" }}
+            />
+          }
+          variant="contained"
+          sx={{
+            textTransform: "none",
+            color: "#fff",
+            fontSize: "14px",
+            background: "#1c1d22",
+            borderRadius: "18px",
+            "&:hover": { background: "#333" },
+          }}
+          onClick={() => {
+            document.body.classList.add("dark");
+          }}
+        >
+          Dark
+        </Button>
       </div>
     </div>
   );

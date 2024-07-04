@@ -6,16 +6,12 @@ import BoardHeaderContent from "../components/BoardHeaderContent";
 import Container from "../components/Container";
 import Task from "../components/Task";
 import FrameComponent from "../components/FrameComponent";
+import Sidebar from "../components/Sidebar";
 
 const Dashboard = () => {
   return (
     <div className="h-[900px] relative bg-whitesmoke w-full overflow-hidden flex flex-row items-start justify-start leading-[normal] tracking-[normal] lg:h-auto mq1050:pl-5 mq1050:pr-5 mq1050:box-border">
-      <img
-        className="h-[988px] w-[90px] relative mq1050:hidden"
-        loading="lazy"
-        alt=""
-        src="/sidebar.svg"
-      />
+      <Sidebar />
       <Projects />
       <div className="h-[178px] w-80 relative rounded-xl bg-white box-border hidden border-[2px] border-dashed border-gray-600" />
       <main className="h-[900px] flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-[804px] box-border gap-[40px] max-w-[calc(100%_-_408px)] lg:h-auto lg:pb-[523px] lg:box-border mq1050:pb-[340px] mq1050:box-border mq1050:max-w-full mq450:pb-[221px] mq450:box-border mq750:gap-[20px]">
@@ -94,7 +90,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute top-[20px] left-[20px] w-[280px] flex flex-col items-start justify-start gap-[10px] text-base text-gray-100">
+                <div className="absolute top-[20px] left-[20px] w-[310px] flex flex-col items-start justify-start gap-[10px] text-base text-gray-100">
                   <div className="self-stretch flex flex-row items-start justify-between gap-[20px]">
                     <div className="flex flex-col items-start justify-start gap-[22px]">
                       <div className="flex flex-col items-start justify-start gap-[6px]">
@@ -173,7 +169,7 @@ const Dashboard = () => {
                   alt=""
                   src="/item@2x.png"
                 />
-                <div className="absolute top-[128px] left-[20px] w-[280px] flex flex-row items-start justify-between gap-[20px]">
+                <div className="absolute top-[128px] left-[20px] w-[320px] flex flex-row items-start justify-between gap-[20px]">
                   <div className="rounded-mid bg-salmon-200 overflow-hidden flex flex-row items-start justify-start py-2 px-4 whitespace-nowrap z-[1]">
                     <div className="relative leading-[100%] font-semibold inline-block min-w-[79px]">
                       12 Nov 2022
