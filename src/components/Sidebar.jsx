@@ -13,7 +13,7 @@ const GroupComponent1 = ({ className = "" }) => {
           className=" h-6 relative z-[1] shrink-0 overflow-hidden pl-2"
           loading="lazy"
           alt=""
-          src="/public/Logo (1).png"
+          src="/Logo (1).png"
         />
       </Link>
       <div className="self-stretch flex flex-row items-start justify-start pt-0 pb-[244px] pl-2 pr-0 mq750:pb-[159px] mq750:box-border">
@@ -28,7 +28,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt="Home"
-                  src="/public/Main.png"
+                  src="/Main.png"
                 />
               </div>
             )}
@@ -47,7 +47,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt="Profile"
-                  src="/public/Profile.png"
+                  src="/Profile.png"
                 />
               </>
             )}
@@ -66,7 +66,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt="Calendar"
-                  src="/public/Calendar.png"
+                  src="/Calendar.png"
                 />
               </>
             )}
@@ -85,7 +85,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt="Analytics"
-                  src="/public/Analytics.png"
+                  src="/Analytics.png"
                 />
               </>
             )}
@@ -104,7 +104,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt="Uploads"
-                  src="/public/Uploads.png"
+                  src="/Uploads.png"
                 />
               </>
             )}
@@ -123,7 +123,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt="Map"
-                  src="/public/Map.png"
+                  src="/Map.png"
                 />
               </>
             )}
@@ -142,7 +142,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
                   loading="lazy"
                   alt="Settings"
-                  src="/public/Settings.png"
+                  src="/Settings.png"
                 />
               </>
             )}
