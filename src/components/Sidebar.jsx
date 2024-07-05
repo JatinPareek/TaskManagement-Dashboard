@@ -18,11 +18,15 @@ const GroupComponent1 = ({ className = "" }) => {
       </Link>
       <div className="self-stretch flex flex-row items-start justify-start pt-0 pb-[244px] pl-2 pr-0 mq750:pb-[159px] mq750:box-border">
         <div className="flex-1 flex flex-col items-start justify-start gap-[40px]">
-          <NavLink to="/" className="relative group " activeClassName="active">
+          <NavLink to="/" className="relative group" activeClassName="active">
             {({ isActive }) => (
-              <div className="relative group flex items-center ">
+              <div className="relative flex items-center justify-center ">
                 {isActive && (
-                  <div className="absolute right-[55px] top-1/2 transform -translate-y-1/2 h-8 w-1 rounded-lg bg-cornflowerblue z-[1]" />
+                  <div
+                    className={`absolute h-10 w-10 rounded-full bg-gray-300 transition-transform duration-500 ease-in-out ${
+                      isActive ? "scale-100" : "scale-0"
+                    }`}
+                  />
                 )}
                 <img
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
@@ -39,9 +43,13 @@ const GroupComponent1 = ({ className = "" }) => {
             activeClassName="active"
           >
             {({ isActive }) => (
-              <>
+              <div className="relative flex items-center justify-center">
                 {isActive && (
-                  <div className="absolute right-[55px] top-1/2 transform -translate-y-1/2 h-8 w-1 rounded-lg bg-cornflowerblue z-[1]" />
+                  <div
+                    className={`absolute h-10 w-10 rounded-full bg-gray-300 transition-transform duration-500 ease-in-out ${
+                      isActive ? "scale-100" : "scale-0"
+                    }`}
+                  />
                 )}
                 <img
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
@@ -49,7 +57,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   alt="Profile"
                   src="/Profile.png"
                 />
-              </>
+              </div>
             )}
           </NavLink>
           <NavLink
@@ -58,9 +66,13 @@ const GroupComponent1 = ({ className = "" }) => {
             activeClassName="active"
           >
             {({ isActive }) => (
-              <>
+              <div className="relative flex items-center justify-center">
                 {isActive && (
-                  <div className="absolute right-[55px] top-1/2 transform -translate-y-1/2 h-8 w-1 rounded-lg bg-cornflowerblue z-[1]" />
+                  <div
+                    className={`absolute h-10 w-10 rounded-full bg-gray-300 transition-transform duration-500 ease-in-out ${
+                      isActive ? "scale-100" : "scale-0"
+                    }`}
+                  />
                 )}
                 <img
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
@@ -68,7 +80,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   alt="Calendar"
                   src="/Calendar.png"
                 />
-              </>
+              </div>
             )}
           </NavLink>
           <NavLink
@@ -77,9 +89,13 @@ const GroupComponent1 = ({ className = "" }) => {
             activeClassName="active"
           >
             {({ isActive }) => (
-              <>
+              <div className="relative flex items-center justify-center">
                 {isActive && (
-                  <div className="absolute right-[55px] top-1/2 transform -translate-y-1/2 h-8 w-1 rounded-lg bg-cornflowerblue z-[1]" />
+                  <div
+                    className={`absolute h-10 w-10 rounded-full bg-gray-300 transition-transform duration-500 ease-in-out ${
+                      isActive ? "scale-100" : "scale-0"
+                    }`}
+                  />
                 )}
                 <img
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
@@ -87,7 +103,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   alt="Analytics"
                   src="/Analytics.png"
                 />
-              </>
+              </div>
             )}
           </NavLink>
           <NavLink
@@ -96,9 +112,13 @@ const GroupComponent1 = ({ className = "" }) => {
             activeClassName="active"
           >
             {({ isActive }) => (
-              <>
+              <div className="relative flex items-center justify-center">
                 {isActive && (
-                  <div className="absolute right-[55px] top-1/2 transform -translate-y-1/2 h-8 w-1 rounded-lg bg-cornflowerblue z-[1]" />
+                  <div
+                    className={`absolute h-10 w-10 rounded-full bg-gray-300 transition-transform duration-500 ease-in-out ${
+                      isActive ? "scale-100" : "scale-0"
+                    }`}
+                  />
                 )}
                 <img
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
@@ -106,7 +126,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   alt="Uploads"
                   src="/Uploads.png"
                 />
-              </>
+              </div>
             )}
           </NavLink>
           <NavLink
@@ -115,9 +135,13 @@ const GroupComponent1 = ({ className = "" }) => {
             activeClassName="active"
           >
             {({ isActive }) => (
-              <>
+              <div className="relative flex items-center justify-center">
                 {isActive && (
-                  <div className="absolute right-[55px] top-1/2 transform -translate-y-1/2 h-8 w-1 rounded-lg bg-cornflowerblue z-[1]" />
+                  <div
+                    className={`absolute h-10 w-10 rounded-full bg-gray-300 transition-transform duration-500 ease-in-out ${
+                      isActive ? "scale-100" : "scale-0"
+                    }`}
+                  />
                 )}
                 <img
                   className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
@@ -125,7 +149,7 @@ const GroupComponent1 = ({ className = "" }) => {
                   alt="Map"
                   src="/Map.png"
                 />
-              </>
+              </div>
             )}
           </NavLink>
           <NavLink
@@ -134,17 +158,21 @@ const GroupComponent1 = ({ className = "" }) => {
             activeClassName="active"
           >
             {({ isActive }) => (
-              <>
+              <div className="relative flex items-center justify-center">
                 {isActive && (
-                  <div className="absolute right-[55px] top-1/2 transform -translate-y-1/2 h-8 w-1 rounded-lg bg-cornflowerblue z-[1]" />
+                  <div
+                    className={`absolute h-10 w-10 rounded-full bg-gray-300 transition-transform duration-500 ease-in-out ${
+                      isActive ? "scale-100" : "scale-0"
+                    }`}
+                  />
                 )}
                 <img
-                  className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
+                  className="w-6 h-6 relative z-10"
                   loading="lazy"
                   alt="Settings"
                   src="/Settings.png"
                 />
-              </>
+              </div>
             )}
           </NavLink>
         </div>
